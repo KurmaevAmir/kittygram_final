@@ -39,6 +39,18 @@ docker compose up --build -d
 docker container exec kittygram_final-backend-1 python manage.py migrate
 ```
 
+Также необходимо добавить значения в файл .env
+```dotenv
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+POSTGRES_DB=
+
+DB_HOST=db
+DB_PORT=5432
+
+SECRET_KEY=
+ALLOWED_HOSTS=
+```
 
 #  Как работать с репозиторием финального задания
 
