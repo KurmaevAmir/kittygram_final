@@ -1,3 +1,45 @@
+# Описание проекта
+
+## Функциональное описание проекта 
+- Доступна регистрация / авторизация
+- Добавление нового кота с выбором фотографии, достижений. Есть поля 
+для ввода: имя, год рождения
+- Изменение данных о коте
+- Удаление информации о коте
+- Панель администратора
+
+## Стек технологий
+
+### Backend
+Python Django
+
+Libraries:
+- Django==3.2.3
+- djangorestframework==3.12.4
+- djoser==2.1.0
+- gunicorn==20.1.0
+- webcolors==1.11.1
+- psycopg2-binary==2.9.3
+- Pillow==9.0.0
+- pytest==6.2.4
+- pytest-django==4.4.0
+- pytest-pythonpath==0.7.3
+- PyYAML==6.0
+
+### Frontend
+JavaScript React
+
+## Развёртка проекта
+Для развёртки проекта достаточно выполнить следующие команды:
+```shell
+docker compose up --build -d
+```
+
+```shell
+docker container exec kittygram_final-backend-1 python manage.py migrate
+```
+
+
 #  Как работать с репозиторием финального задания
 
 ## Что нужно сделать
