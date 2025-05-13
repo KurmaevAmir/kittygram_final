@@ -36,6 +36,7 @@ jobs:
           pip install ruff==0.8.0
           pip install pycodestyle
           pip install pre-commit
+          pip install cython
           pip install -r ./backend/requirements.txt
       - name: Run pre-commit checks
         run: |
